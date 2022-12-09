@@ -1,24 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   } 
+.conteiner{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    
+    
+
+}
+.titulo{
+    width: 30%;
+    font-size: 2rem;
+    text-align: center;
 }
 nav{
-    width: 100%;
+    width: 50%;
     height: 50%;
+    display: flex;
+    justify-content: center;
   
    
 }
 .menu{
-    width: 100%;
-    height: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-}
-.itenDaLista{
-    width: 100%;
-    height: 50%;
-    display: flex;
+    
    
+}
+.itemDaLista{
+    width: 20%;
+   text-align: center;
+   font-size: 1rem;
+   
+}
+.itemDaLista:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.menuMoble{
+    display:none;
+}
+@media(min-width:201px) and (max-width:500px)
+{
+    nav{
+        display: none;
+
+    }
+    .menuMoble{
+       width: 30%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+
+
+    }
+    .titulo{
+        font-size: 1rem;
+       
+    }
+}
+main{
+    border:solid;
+}
+.orangeBlue{
+    height: 70vh;
+    background-image: url('./imagens/larannja.png.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.tituloDaSecao{
+    width: 60%;
+    font-size:4vw;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+
+}
+.paragrafoDaSecao{
+   height: 10vh;
+    font-size:2vw;
+    font-weight: lighter;
+    color: white;
+    padding-left: 4.5vw;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+
 }
