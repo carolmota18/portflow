@@ -69,9 +69,7 @@ nav{
        
     }
 }
-main{
-    border:solid;
-}
+
 .orangeBlue{
     height: 70vh;
     background-image: url('./imagens/larannja.png.png');
@@ -100,4 +98,59 @@ main{
     align-items: flex-end;
     text-transform: uppercase;
 
+}
+.imgBox{
+    width: 100%;
+   padding-left:5rem;
+}
+img{
+    width: 20vw;
+    margin: 0.4rem;
+}
+@media(min-width:201px) and (max-width:500px)
+{
+    main{
+        display:flex;
+        flex-direction:column;
+    }
+    .orangeBlue{
+        width: 100%;
+        height: 90vh;
+        background-image: url('./imagens/larannja.png.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        
+       
+    }
+    .tituloDaSecao{
+        width: 57%;
+        font-size:2rem;
+        font-weight: bold;
+        color: white;
+        overflow-wrap: break-word;
+        padding-left: 4.5vw;
+
+    
+    }
+    .paragrafoDaSecao{
+        font-size:1rem;
+        font-weight: lighter;
+        color: white;
+        padding-left: 4.5vw;
+        text-transform: uppercase;
+    
+    }
+    .imgBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 5rem;
+    }
+    img{
+        width:70vw;
+
+    }
 }
